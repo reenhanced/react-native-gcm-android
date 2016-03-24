@@ -10,11 +10,12 @@ https://github.com/oney/TestGcm
 
 - Run `npm install react-native-gcm-android --save`
 
-- In `android/build.gradle`
+- In `android/build.gradle`, **visit the [google-services repo](https://bintray.com/android/android-tools/com.google.gms.google-services/) for the latest version to use**
+
 ```gradle
 dependencies {
     classpath 'com.android.tools.build:gradle:1.3.1'
-    classpath 'com.google.gms:google-services:1.5.0-beta3' // <- Add this line
+    classpath 'com.google.gms:google-services:2.1.0-alpha3' // <- Add this line
 ```
 
 - In `android/settings.gradle`, add
@@ -35,7 +36,7 @@ dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:0.16.+"
-    compile 'com.google.android.gms:play-services-gcm:8.3.0' // <- Add this line
+    compile 'com.google.android.gms:play-services-gcm:8.4.0' // <- Add this line
     compile project(':RNGcmAndroid')                         // <- Add this line
     compile project(':react-native-system-notification')     // <- Add this line
 }
